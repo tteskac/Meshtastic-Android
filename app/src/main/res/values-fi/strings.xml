@@ -235,6 +235,8 @@
     <string name="quick_chat_edit">Muokkaa pikaviestiä</string>
     <string name="quick_chat_append">Lisää viestiin</string>
     <string name="quick_chat_instant">Lähetä välittömästi</string>
+    <string name="quick_chat_show">Näytä pikaviestivalikko</string>
+    <string name="quick_chat_hide">Piilota pikaviestivalikko</string>
     <string name="factory_reset">Palauta tehdasasetukset</string>
     <string name="factory_reset_description">Tämä tyhjentää kaikki laitteesi asetukset.</string>
     <string name="bluetooth_disabled">Bluetooth ei ole käytössä</string>
@@ -772,4 +774,5 @@
     <string name="latest_stable_firmware">Viimeisin vakaa (stable)</string>
     <string name="latest_alpha_firmware">Viimeisin epävakaa (alpha)</string>
     <string name="supported_by_community">Meshtastic-yhteisön tukema</string>
+    <string name="firmware_edition">Laiteohjelmistoversio</string>
 </resources>
