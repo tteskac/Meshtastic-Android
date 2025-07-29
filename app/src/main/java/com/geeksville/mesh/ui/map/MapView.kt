@@ -734,6 +734,32 @@ fun MapView(model: UIViewModel = viewModel(), navigateToNodeDetails: (Int) -> Un
                                 },
                                 onClick = { model.toggleShowPrecisionCircleOnMap() },
                             )
+                            // Show colorize recently heard nodes toggle
+                            DropdownMenuItem(
+                                text = {
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        verticalAlignment = Alignment.CenterVertically,
+                                    ) {
+                                        Icon(
+                                            imageVector = Icons.Default.ColorLens,
+                                            contentDescription = null,
+                                            modifier = Modifier.padding(end = 8.dp),
+                                            tint = MaterialTheme.colorScheme.onSurface,
+                                        )
+                                        Text(
+                                            text = stringResource(R.string.colorize_recent_nodes),
+                                            modifier = Modifier.weight(1f),
+                                        )
+                                        Checkbox(
+                                            checked = mapFilterState.colorizeRecentNodes,
+                                            onCheckedChange = { enabled -> model.setColorizeRecentNodes(enabled) },
+                                            modifier = Modifier.padding(start = 8.dp),
+                                        )
+                                    }
+                                },
+                                onClick = { model.setColorizeRecentNodes(!mapFilterState.colorizeRecentNodes) },
+                            )
                         }
                     }
                     if (hasGps) {
